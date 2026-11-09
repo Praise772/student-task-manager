@@ -1,0 +1,16 @@
+# Keep database passwords private
+backend/.env
+.env
+
+# Python files and virtual environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# React dependencies
+node_modules/
+frontend/dist/
+
+# Editor settings
+.vscode/

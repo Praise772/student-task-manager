@@ -1,0 +1,134 @@
+/* Main container for our Student Task Manager */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the main heading */
+h1 {
+  color: #2563eb;
+  text-align: center;
+}
+
+/* Style the welcome message */
+h1 + p {
+  text-align: center;
+  color: #666;
+}
+
+/* Style the task title and description input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Style all buttons in our application */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Change button color when the mouse is over it */
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Give the Delete button a red background */
+.delete-btn {
+  background-color: #dc2626;
+}
+
+/* Make the Delete button darker when hovered */
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Style each saved task as a card */
+.task-card {
+  background-color: #f9fafb;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}/* Style the title inside each task card */
+.task-card h3 {
+  color: #1f2937;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/* Style the paragraphs inside each task card */
+.task-card p {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+/* Green text for completed tasks */
+.task-card .completed {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* Orange text for pending tasks */
+.task-card .pending {
+  color: #ea580c;
+  font-weight: bold;
+}
+
+/* Highlight the currently selected filter button */
+button.active-filter {
+  background-color: #1e3a8a;
+}
+
+/* Keep the selected button dark when hovered */
+button.active-filter:hover {
+  background-color: #172554;
+}
+
+/* Style the success message */
+.success-message {
+  color: #15803d;
+  background-color: #dcfce7;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Make our Student Task Manager mobile-friendly */
+@media (max-width: 600px) {
+
+  /* Reduce the space around the main container */
+  #root {
+    padding: 10px;
+  }
+
+  /* Make the main heading smaller */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Reduce the padding inside task cards */
+  .task-card {
+    padding: 15px;
+  }
+
+  /* Make buttons fit better on small screens */
+  button {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
