@@ -110,14 +110,12 @@ code {
   background: var(--code-bg);
 }
 
-/* Prevent the page from becoming wider than the screen */
 html,
 body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* Make the main application container responsive */
 #root {
   width: 100%;
   max-width: 800px;
